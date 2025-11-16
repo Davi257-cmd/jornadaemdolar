@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-10 pb-12 md:pt-0 md:pb-0">
       {/* Video Background com blur efeito exclusivo */}
       <div className="absolute inset-0 z-0">
         {/* Mobile Video - Formato 9:16 */}
@@ -118,7 +118,7 @@ const Hero: React.FC = () => {
 
       <div className="relative z-30 container mx-auto px-4 text-center">
         {/* Badge de urgência */}
-        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-3 rounded-full font-semibold text-sm mb-8 animate-pulse">
+        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-3 rounded-full font-semibold text-sm mb-8 mt-4 sm:mt-0 animate-pulse">
           <Flame className="w-4 h-4" />
           PRÉ-LANÇAMENTO - VAGAS LIMITADAS
           <Flame className="w-4 h-4" />
@@ -160,7 +160,7 @@ const Hero: React.FC = () => {
         </button>
 
         {/* Prova social rápida */}
-        <div className="mt-12 flex items-center justify-center gap-6 text-white/70">
+        <div className="mt-12 mb-8 flex items-center justify-center gap-6 text-white/70">
           <div className="flex items-center gap-2">
           <div className="relative bottom-[9px] md:static md:bottom-0 w-2 h-2 bg-green-400 rounded-full animate-pulse" />
           <span className="text-sm">Acesso imediato à minha estrutura que já está faturando em dólar</span>

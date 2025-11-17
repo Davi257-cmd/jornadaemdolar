@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
             <div>
               <h3 className="text-white font-semibold mb-3">Acesso</h3>
               <p className="text-sm">Entrada imediata</p>
-              <p className="text-sm">Grupo exclusivo Telegram</p>
+              <p className="text-sm">Grupo exclusivo WhatsApp</p>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-3">Garantia</h3>

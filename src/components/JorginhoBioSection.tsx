@@ -154,43 +154,29 @@ const JorginhoBioSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Resultados em Grid 9:16 com Animação */}
-          <div className="space-y-8">
-            <h3 className="text-2xl font-bold text-white text-center mb-8">
-              Resultados Comprovados
-            </h3>
-            <div className="max-w-3xl mx-auto text-center px-4">
-              <p className="text-white/80 mb-4">
-                Cada “venda realizada” que aparece no meu celular é o reflexo de uma estrutura simples que funciona 24h por dia.
-              </p>
-              <p className="text-white/80">
-                E o melhor? Você vai aprender a criar o mesmo sistema — aquele que transforma o celular em uma máquina previsível de faturar em dólar.
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-3 gap-6">
-              {results.map((result, index) => (
-                <div
-                  key={index}
-                  className="relative overflow-hidden rounded-xl"
-                  style={{
-                    animationDelay: `${index * 200}ms`,
-                    opacity: isVisible ? 1 : 0,
-                    transform: isVisible ? 'translateY(0)' : 'translateY(20px)'
-                  }}
-                >
-                  <img 
+          {/* Resultados somente imagens 9:16 */}
+          <div className="grid md:grid-cols-3 gap-6">
+            {results.map((result, index) => (
+              <div
+                key={index}
+                className="relative"
+                style={{
+                  animationDelay: `${index * 200}ms`,
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible ? 'translateY(0)' : 'translateY(20px)'
+                }}
+              >
+                <div className="relative w-[300px] h-[413px] md:w-[500px] md:h-[613px] max-w-full mx-auto">
+                  <img
                     src={result.image}
                     alt={result.period}
                     loading="lazy"
                     decoding="async"
-                    className="w-full h-[28rem] object-cover"
+                    className="absolute inset-0 w-full h-full object-cover rounded-[10px] border-2 border-yellow-400"
                   />
                 </div>
-              ))}
-            </div>
-
-
+              </div>
+            ))}
           </div>
         </div>
       </div>

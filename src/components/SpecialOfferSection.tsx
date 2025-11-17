@@ -175,10 +175,10 @@ const SpecialOfferSection: React.FC = () => {
             <div className="text-center">
               <button
                 onClick={handleFinalCTA}
-                className="group relative inline-flex items-center justify-center gap-2 bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 text-white px-10 py-4 rounded-full text-base md:text-lg font-semibold hover:from-red-600 hover:via-orange-600 hover:to-yellow-600 transform hover:scale-105 transition-all duration-300 shadow-2xl w-full max-w-md"
+                className="group relative inline-flex items-center justify-center gap-2 bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 text-white px-10 py-4 rounded-full text-base md:text-lg font-semibold hover:from-red-600 hover:via-orange-600 hover:to-yellow-600 transform hover:scale-105 transition-all duration-300 shadow-2xl w-full max-w-md min-w-[200px] md:min-w-[240px]"
               >
                 <span className="relative z-10">
-                  Entrar no grupo de pré-lançamento
+                  GARANTA SUA VAGA AGORA
                 </span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform relative z-10" />
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/10 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

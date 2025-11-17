@@ -117,27 +117,20 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="relative z-30 container mx-auto px-4 text-center">
-        {/* Badge de urgência */}
-        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-3 rounded-full font-semibold text-sm mb-8 mt-4 sm:mt-0 animate-pulse">
-          <Flame className="w-4 h-4" />
-          PRÉ-LANÇAMENTO - VAGAS LIMITADAS
-          <Flame className="w-4 h-4" />
-        </div>
+        {/* Badge removida - usando apenas barra fixa no topo */}
 
         {/* Headline principal */}
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-          A ESTRUTURA que{' '}
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+          Estrutura que{' '}
           <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent">
-            FATURA em DÓLAR
+            fatura em dólar
           </span>{' '}
-          TODOS OS DIAS
+          todos os dias
         </h1>
 
         {/* Subheadline */}
-        <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
-          Eu REVELEI à MINHA ESTRUTURA COMPLETA. Aplique e fature - com ofertas e criativos validados 
-          e um funil pronto para converter. Estratégias que já estão convertendo em dólar. 
-          Sem precisar aparecer, sem conversar com ninguém e sem produzir conteúdo.
+        <p className="text-base md:text-xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
+          Aprenda e ative uma <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent">estrutura validada</span> que converte em dólar. Sem complicação, com funil, ofertas e criativos prontos.
         </p>
 
         {/* Timer de urgência */}
@@ -152,9 +145,9 @@ const Hero: React.FC = () => {
         {/* CTA Principal */}
         <button
           onClick={handleCTA}
-          className="group inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-10 py-4 rounded-full text-base font-semibold hover:from-orange-600 hover:to-red-600 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-orange-500/25"
+          className="group inline-flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-10 py-4 rounded-full text-base font-semibold hover:from-orange-600 hover:to-red-600 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-orange-500/25 min-w-[200px] md:min-w-[240px]"
         >
-          <span>Entrar no grupo de pré-lançamento</span>
+          <span>GARANTA SUA VAGA AGORA</span>
           <Users className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           <ChevronRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
         </button>

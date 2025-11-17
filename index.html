@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       #trae-badge-plugin, .trae-badge-plugin { display: none !important; }
+      .marquee { position: relative; width: 100%; overflow: hidden; }
+      .marquee-track { display: inline-flex; gap: 24px; will-change: transform; animation: marquee-left 20s linear infinite; }
+      .marquee-track.paused { animation-play-state: paused; }
+      .marquee-item { flex: 0 0 auto; }
+      @keyframes marquee-left { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+      .carousel { position: relative; width: 100%; overflow: hidden; }
+      .carousel-track { display: inline-flex; gap: 24px; will-change: transform; animation: carousel-left 35s linear infinite; }
+      @keyframes carousel-left { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
     </style>
     <title>Jornada em dolar</title>
     <script type="module">

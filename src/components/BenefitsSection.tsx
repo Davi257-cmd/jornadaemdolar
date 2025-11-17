@@ -71,6 +71,13 @@ const BenefitsSection: React.FC = () => {
       imageSrc: "/images/jornada-em-dolar.png",
       imageAlt: "Todos os meus produtos prontos e validados"
     }
+    ,
+    {
+      title: "Produtos validados em dólar",
+      description: "Ofertas que já convertem em dólar, prontas para ativar.",
+      imageSrc: "/images/produtos validados em dolar.png",
+      imageAlt: "Produtos validados em dólar"
+    }
   ];
 
   return (

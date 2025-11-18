@@ -79,7 +79,7 @@ const JorginhoBioSection: React.FC = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-3xl blur-2xl opacity-20" />
                 <img 
-                  src="/images/foto do autor.jpg" 
+                  src="/images/foto-autor-dois.jpg" 
                   alt="Jorginho - Mentor e Especialista"
                   className="relative w-full md:w-[34rem] h-[28rem] md:h-[53rem] rounded-3xl object-cover shadow-2xl"
                 />
